@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Project Path="DevHub.Api/DevHub.Api.csproj" />
+  <Project Path="DevHub.Application/DevHub.Application.csproj" />
+  <Project Path="DevHub.Domain/DevHub.Domain.csproj" />
+  <Project Path="DevHub.Infrastructure/DevHub.Infrastructure.csproj" />
+</Solution>
