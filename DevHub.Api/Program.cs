@@ -1,7 +1,13 @@
+using DevHub.Api;
+using DevHub.Domain;
+using DevHub.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-builder.Services.AddOpenApi();
+builder.Services
+    .AddInfrastructureLayerServices(builder.Configuration)
+    .AddApplicationLayerServices()
+    .AddDomainLayerServices();
 
 var app = builder.Build();
 
